@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grommet } from 'grommet';
 
-import HomePage from './components/Home';
+import Navbar from './components/Navbar';
 const theme = {
   global: {
     font: {
@@ -12,10 +12,11 @@ const theme = {
   },
 };
 
-export default function App() {
-  return (
+const main = () => {
+  return(
     <Grommet theme={theme}>
-      <HomePage />
+      <Navbar />
     </Grommet>
   );
-}
+};
+export default main;

@@ -2,7 +2,6 @@ import React from 'react';
 import VideoBg from "reactjs-videobg";
 
 import { Heading, Box, Avatar } from 'grommet';
-import Navbar from './Navbar'
 
 const title = {
     color: 'white',
@@ -31,14 +30,11 @@ const VideoBackground = (props) => (
 export default () => (
     <Box direction="column">
         <Box direction="row">
-        <VideoBackground />
+            <VideoBackground />
         </Box>
         <Box direction="row" style={title}>
-        <Avatar style={avatar} src="axelmzl.jpg"/>
-        <Heading style={name} margin="none">Axel Mazel</Heading>
-        </Box>
-        <Box>
-        <Navbar />
+            <Avatar style={avatar} src="axelmzl.jpg"/>
+            <Heading style={name} margin="none">Axel Mazel</Heading>
         </Box>
     </Box>
 );

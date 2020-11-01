@@ -1,5 +1,7 @@
 import React from 'react';
 import { Button } from 'grommet'
+import data from './Data';
+
 import {
     BrowserRouter as Router,
     Switch,
@@ -7,9 +9,9 @@ import {
     Link
   } from "react-router-dom";
 
-import CV from './Cv';
+import Resume from './Resume';
 import Experience from './Experience';
-import Home from './Home';
+import HomePage from './Home';
 
 const button = {
   fontFamily: 'monospace',
@@ -21,25 +23,28 @@ const menu = {
   margin: '0 auto'
 };
 
-export default () => (
-    <Router>
-    <div>
-      <nav style={menu}>
-          <Link to="/"><Button style={button} primary label="Home" /></Link>
-          <Link to="/cv"><Button style={button} primary label="CV" /></Link>
-          <Link to="/experience"><Button style={button} primary label="Expérience" /></Link>
-      </nav>
-      <Switch>
-        <Route path="/cv">
-          <CV />
-        </Route>
-        <Route path="/experience">
-          <Experience />
-        </Route>
-        {/* <Route path="/">
-          <Home />
-        </Route> */}
-      </Switch>
-    </div>
-  </Router>
-);
+const { home, resume, experience } = data.menu;
+
+const main = () => {
+  return(
+      <Router>
+        <nav style={menu}>
+            <Link to="/"><Button style={button} primary label={home} /></Link>
+            <Link to="/resume"><Button style={button} primary label={resume} /></Link>
+            <Link to="/experience"><Button style={button} primary label={experience} /></Link>
+        </nav>
+        <Switch>
+          <Route path="/resume">
+            <Resume />
+          </Route>
+          <Route path="/experience">
+            <Experience />
+          </Route>
+          <Route exact path="/">
+            <HomePage />
+          </Route>
+        </Switch>
+    </Router>
+  );
+};
+export default main;

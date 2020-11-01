@@ -1,9 +1,13 @@
 import React, {useState} from 'react';
-import { Header, Main, Box, Button } from 'grommet';
+import { Header, Main, Box, Button, Footer, Text, Anchor } from 'grommet';
 import { Next } from 'grommet-icons';
 
 import Skills from './Skills';
 import Resume from './Resume';
+
+import data from './Data';
+const { ChooseButton, Copyright } = data.fr.data;
+
 
 const button = {
     backgroundColor: "#fc403f",
@@ -22,7 +26,20 @@ const info = {
     borderRadius: "10px"
 }
 
+const footerSection = {
+    position: "absolute",
+    bottom: "0",
+    width: "100%",
+    backgroundColor: "#f0f1f5",
+    color: "#000"
+}
 
+const footerButton = {
+    backgroundColor: "#fc403f",
+    padding: '10px',
+    color: "#ffffff",
+    textSize: "8px",
+}
 
 const Competence = ({ type }) => {
     return (
@@ -46,12 +63,16 @@ const MainContent = () => {
     };
 
     return(
-        <Header background="brand">
-        </Header>,
-        <Main pad="large">
-            <Button fill="horizontal" onClick={handleClick} style={button} label={choice} icon={<Next />} reverse ></Button>
-            <Competence type={choice}/>
-        </Main>
+        <Box>
+            <Main pad="large">
+                <Button fill="horizontal" onClick={handleClick} style={button} label={ChooseButton} icon={<Next color="#fff" />} reverse ></Button>
+                <Competence type={choice}/>
+            </Main>
+            <Footer background="brand" pad="medium" style={footerSection}>
+                <Text>{Copyright}</Text>
+                <Button style={footerButton} label="Voir le vrai site" href="https://axelmazel.fr" target="_blank" />
+            </Footer>
+        </Box>
     );
 }
 export default MainContent;

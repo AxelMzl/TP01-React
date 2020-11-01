@@ -12,14 +12,20 @@ export default {
             "photoLink": "axelmzl.jpg",
             "resumeLink": "./CV.pdf",
             "downloadButton": "Télécharger mon CV",
-            "presentation": "J'ai 25 ans et je suis développeur web Junior à Toulouse, vidéaste, designer et concepteur. Actuellement étudiant sur Toulouse à Ynov Informatique en développement informatique et en freelance. Je suis toujours très motivé pour de nouveaux projets !"
+            "presentation": "J'ai 25 ans et je suis développeur web Junior à Toulouse, vidéaste, designer et concepteur. Actuellement étudiant sur Toulouse à Ynov Informatique en développement informatique et en freelance. Je suis toujours très motivé pour de nouveaux projets !",
+            "HtmlImg": "html.png",
+            "CssImg": "css.png",
+            "JSImg": "javascript.png",
+            "PHPImg": "php.png",
+            "ReactImg": "react.png",
+            "SkillTitle": "Mes compétences",
+            "ResumeTitle": "A propos de moi",
+            "ChooseButton": "A propos / Mes compétences",
+            "Copyright": "Tous droits réservés à la structure Biterroise"
         },
         "menu": {
             "home": "Accueil",
             "aboutme": "A Propos",
-        },
-        "footer": {
-            "copyright": 'Tout '
         }
     }
 };

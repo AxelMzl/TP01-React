@@ -1,19 +1,19 @@
 import React from 'react';
-import { Box, Avatar } from 'grommet';
+import { Box, Avatar, Button, Heading } from 'grommet';
 
 
 import data from './Data';
 const { name, firstname, resumeLink, downloadButton, presentation, photoLink } = data.fr.data;
 
 const avatarSize = {
-    width: "200px",
-    height: "200px",
+    width: "250px",
+    height: "250px",
     margin: "0 auto"
 }
 
 const boxInfo = {
     width: "700px",
-    marginLeft: "10%",
+    margin: "0 auto",
     backgroundColor: "#f0f1f5",
     borderRadius: "10px",
     padding: "10px"
@@ -29,9 +29,21 @@ const titleName = {
     textAlign: "center"
 }
 
-const text = {
-    
+const boxDownload = {
+    marginTop: "5%"
 }
+
+const button = {
+    backgroundColor: "#fc403f",
+    margin: "0 auto",
+    fontFamily: 'monospace',
+    padding: '10px',
+    color: "#ffffff",
+    textTransform: "uppercase",
+    textSize: "18px",
+    marginBottom: "15px"
+};
+
 
 const Resume = () => {
     return(
@@ -41,12 +53,12 @@ const Resume = () => {
                     <Avatar style={avatarSize} src={photoLink}/>
                 </Box>
                 <Box width="400px" style={boxInfoContent}>
-                    <Box style={titleName}>{firstname} {name}</Box><Box/>
-                    <Box style={text}>{presentation}</Box>
+                    <Heading style={titleName}>{firstname} {name}</Heading><Box/>
+                    <Box>{presentation}</Box>
                 </Box>
             </Box>
-            <Box direction="row">
-                <a href={resumeLink} target="_blank" class="btn-st" rel="noopener">{downloadButton}</a>
+            <Box direction="row" style={boxDownload}>
+                <Button style={button} href={resumeLink} target="_blank">{downloadButton}</Button>
             </Box>
         </Box>
     );

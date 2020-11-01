@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { Header, Main, Box, Button, Footer, Text, Anchor } from 'grommet';
+import { Main, Box, Button, Footer, Text } from 'grommet';
 import { Next } from 'grommet-icons';
 
 import Skills from './Skills';
@@ -20,12 +20,6 @@ const button = {
     marginBottom: "15px",
     border: "hidden"
 };
-
-const info = {
-    padding: "30px",
-    backgroundColor: "#f0f1f5",
-    borderRadius: "10px"
-}
 
 const footerSection = {
     position: "absolute",

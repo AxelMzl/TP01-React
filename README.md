@@ -1,3 +1,6 @@
+## Preview the projet
+Open [https://reactappaxel.herokuapp.com/](https://reactappaxel.herokuapp.com/)
+
 ## To start the project you will need to follow this steps..
 
 ### `npm install`

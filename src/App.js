@@ -1,20 +1,21 @@
 import React from 'react';
 import { Grommet } from 'grommet';
+	
+import './fonts/Poppins-Regular.ttf'
 
 import Navbar from './components/Navbar';
 const theme = {
   global: {
     font: {
-      family: 'Roboto',
-      size: '18px',
-      height: '20px',
+      family: 'Poppins-Regular',
+      size: '14px',
     },
   },
 };
 
 const main = () => {
   return(
-    <Grommet theme={theme}>
+    <Grommet full theme={theme}>
       <Navbar />
     </Grommet>
   );

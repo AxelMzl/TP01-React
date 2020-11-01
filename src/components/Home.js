@@ -6,7 +6,7 @@ import { Heading, Box, Avatar } from 'grommet';
 const title = {
     color: 'white',
     margin: '0 auto',
-    marginTop: '30%',
+    marginTop: '10%',
     marginBottom: '10%'
 };
 

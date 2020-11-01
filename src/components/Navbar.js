@@ -9,36 +9,34 @@ import {
     Link
   } from "react-router-dom";
 
-import Resume from './Resume';
-import Experience from './Experience';
+import AboutMe from './AboutMe';
 import HomePage from './Home';
 
 const button = {
   fontFamily: 'monospace',
   marginLeft: '25px',
+  backgroundColor: '#fc403f',
+  border: 'none',
 };
 
 const menu = {
   textAlign: 'center',
-  margin: '0 auto'
+  margin: '0 auto',
+  marginTop: '5%'
 };
 
-const { home, resume, experience } = data.menu;
+const { home, aboutme } = data.fr.menu;
 
 const main = () => {
   return(
       <Router>
         <nav style={menu}>
             <Link to="/"><Button style={button} primary label={home} /></Link>
-            <Link to="/resume"><Button style={button} primary label={resume} /></Link>
-            <Link to="/experience"><Button style={button} primary label={experience} /></Link>
+            <Link to="/AboutMe"><Button style={button} primary label={aboutme} /></Link>
         </nav>
         <Switch>
-          <Route path="/resume">
-            <Resume />
-          </Route>
-          <Route path="/experience">
-            <Experience />
+          <Route path="/AboutMe">
+            <AboutMe />
           </Route>
           <Route exact path="/">
             <HomePage />

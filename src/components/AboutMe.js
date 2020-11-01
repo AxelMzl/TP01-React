@@ -6,7 +6,7 @@ import Skills from './Skills';
 import Resume from './Resume';
 
 import data from './Data';
-const { ChooseButton, Copyright } = data.fr.data;
+const { ChooseButton, Copyright, FooterButtonTxt, OriginalWebsiteLink } = data.fr.data;
 
 
 const button = {
@@ -17,7 +17,8 @@ const button = {
     color: "#ffffff",
     textTransform: "uppercase",
     textSize: "18px",
-    marginBottom: "15px"
+    marginBottom: "15px",
+    border: "hidden"
 };
 
 const info = {
@@ -39,6 +40,7 @@ const footerButton = {
     padding: '10px',
     color: "#ffffff",
     textSize: "8px",
+    border: "hidden"
 }
 
 const Competence = ({ type }) => {
@@ -70,7 +72,7 @@ const MainContent = () => {
             </Main>
             <Footer background="brand" pad="medium" style={footerSection}>
                 <Text>{Copyright}</Text>
-                <Button style={footerButton} label="Voir le vrai site" href="https://axelmazel.fr" target="_blank" />
+                <Button style={footerButton} label={FooterButtonTxt} href={OriginalWebsiteLink} target="_blank" />
             </Footer>
         </Box>
     );

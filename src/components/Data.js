@@ -21,7 +21,16 @@ export default {
             "SkillTitle": "Mes compétences",
             "ResumeTitle": "A propos de moi",
             "ChooseButton": "A propos / Mes compétences",
-            "Copyright": "Tous droits réservés à la structure Biterroise"
+            "Copyright": "Tous droits réservés à la structure Biterroise",
+            "FooterButtonTxt": "Voir le vrai site",
+            "OriginalWebsiteLink": "https://axelmazel.fr",
+            "ExperienceTitle": "Expériences",
+            "Experience1": "Freelance",
+            "Experience1Desc": "Travail en microentreprise pour le compte d'association, société dans la réalisation de site internet.",
+            "Experience1Date": "2015 - 2020",
+            "Experience2": "Jingoo",
+            "Experience2Desc": "Développement web sous Symfony d'une plateforme dédiée aux photographes",
+            "Experience2Date": "2019 - 2020",
         },
         "menu": {
             "home": "Accueil",

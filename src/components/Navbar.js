@@ -16,7 +16,6 @@ const button = {
   fontFamily: 'monospace',
   marginLeft: '25px',
   backgroundColor: '#fc403f',
-  border: 'none',
 };
 
 const menu = {
@@ -31,7 +30,7 @@ const main = () => {
   return(
       <Router>
         <nav style={menu}>
-            <Link to="/"><Button style={button} primary label={home} /></Link>
+            <Link to="/"><Button focusIndicator="false" style={button} primary label={home} /></Link>
             <Link to="/AboutMe"><Button style={button} primary label={aboutme} /></Link>
         </nav>
         <Switch>

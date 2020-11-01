@@ -11,6 +11,9 @@ const theme = {
       size: '14px',
     },
   },
+  button: {
+    focusIndicator: false
+  }
 };
 
 const main = () => {

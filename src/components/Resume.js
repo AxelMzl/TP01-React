@@ -41,7 +41,8 @@ const button = {
     color: "#ffffff",
     textTransform: "uppercase",
     textSize: "18px",
-    marginBottom: "15px"
+    marginBottom: "15px",
+    border: "hidden"
 };
 
 
